@@ -2,6 +2,7 @@ from pyspark.sql import SparkSession
 import pyspark.sql.functions as SparkFunctions
 from pyspark import SparkContext
 from pyspark.sql.dataframe import DataFrame
+from kafka import *
 import os
 
 os.environ["PYSPARK_SUBMIT_ARGS"] = '--jars aerospike-spark-assembly-3.2.0.jar pyspark-shell'
